@@ -1,0 +1,152 @@
+@@ -0,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>pagePiling.js plugin - No anchor</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
+	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
+	<link rel="stylesheet" type="text/css" href="vendor/jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="myresume.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<script type="text/javascript" src="vendor/jquery.pagepiling.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var en=['Page1','Page2','Page3','Page4'];
+			var cn=['页面1','页面2','页面3','页面4'];
+			$('#pagepiling').pagepiling({
+				sectionsColor: ['#bfda00', '#00ffcc', '#9999ff', '#51bec4'],
+				navigation: {
+					'position': 'right',
+					'tooltips': ['Home', 'Education', 'Page 3', 'Pgae 4']
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="pagepiling">
+	<div class="section center" id="home">
+		<img id="avatar" src="imgs/avatar.jpg"/>
+		<h1 id="title">Hu Chunwang</h1>
+		<h2>Web Front-End Developer</h2>
+		<div class="mail">
+			<img id="gmail" src="imgs/gmail.png"/>
+			<p><a href="mailto:hcwzju@gmail.com">hcwzju@gmail.com</a></p>
+		</div>
+		<div class="phone">
+			<img id="phone" src="imgs/Phone-icon.png"/>
+			<p>+86 18668112386</p>
+		</div>
+	</div>
+	<div class="section center" id="education">
+		<h1>Education</h1>
+		<div class="edu edu_pg">
+			<div class="edu__body">
+				<img id="zju" src="imgs/zju.png" class="edu__logo"/>
+				<p>I study in <strong>Zhejiang University </strong> in 2012.8-2016.6, majoring in <strong>Computer Science & Technology</strong>.I will get the
+					<strong>Bachelor's degree of Engineering</strong> in 2016.6.
+					Awards are listed:
+				</p>
+				<ul class="list">
+					<li>
+						3rd Prize Scholarship for Outstanding Students
+					</li>
+					<li>
+						3rd Prize Scholarship for Outstanding Merits
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="edu edu_ms">
+			<div class="edu__body">
+				<img id="hkust" src="imgs/hkust.png" class="edu__logo"/>
+				<p>I have been admited by hkust and will take a program in Information Technology. I will get the Master's degree
+					in 2017.11
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="section center" id="section4">
+		<div class="intro">
+			<h1>Professions</h1>
+			<div class="boundary">
+				<div class="section-body">
+					<ul class="tech-skill-list">
+						<li class="tech-skill-list__item tech-skill-list__item-javascript tech-skill-list__item--mastered">
+							<h4 class="tech-skill-list__item__name">Javascript</h4>
+							<div class="tech-skill-list__item__detail fade">
+								<ul class="list">
+									<li>精通原生Javascript，能脱离jQuery等类库编码；</li>
+									<li>能运用模块化、面向对象的方式编程；</li>
+									<li>熟悉正则表达式的使用；</li>
+									<li>编写过功能全面的Javascript基础类库。</li>
+								</ul>
+							</div>
+						</li>
+						<li class="tech-skill-list__item tech-skill-list__item-html-and-css tech-skill-list__item--mastered">
+							<h4 class="tech-skill-list__item__name">HTML &amp; CSS</h4>
+							<div class="tech-skill-list__item__detail fade">
+								<ul class="list">
+									<li>能使用合适的结构编写兼容主流浏览器的页面布局；</li>
+									<li>了解HTML 5新标签的语义；</li>
+									<li>能适当运用CSS 3使页面在现代浏览器上效果更佳；</li>
+									<li>能熟练使用Chrome开发者工具、FireBug、Fiddler等工具辅助开发；</li>
+									<li>有移动端页面（App内嵌页面）开发经验。</li>
+								</ul>
+							</div>
+						</li>
+						<li class="tech-skill-list__item tech-skill-list__item-nodejs tech-skill-list__item--practised">
+							<h4 class="tech-skill-list__item__name">Node.js</h4>
+							<div class="tech-skill-list__item__detail fade">
+								<ul class="list">
+									<li>能根据前端业务需求开发对应的辅助工具；</li>
+									<li>熟悉基于Express框架的Web开发。</li>
+								</ul>
+							</div>
+						</li>
+						<li class="tech-skill-list__item tech-skill-list__item-aspdotnet tech-skill-list__item--practised">
+							<h4 class="tech-skill-list__item__name">ASP.NET &amp; ASP</h4>
+							<div class="tech-skill-list__item__detail fade">
+								<ul class="list">
+									<li>熟悉基于WebForm和ASP.NET MVC的Web开发；</li>
+									<li>编写过一套简单的基于ADO.NET的ORM类库。</li>
+								</ul>
+							</div>
+						</li>
+						<li class="tech-skill-list__item tech-skill-list__item-sql tech-skill-list__item--practised">
+							<h4 class="tech-skill-list__item__name">SQL</h4>
+							<div class="tech-skill-list__item__detail fade">
+								<ul class="list">
+									<li>能熟练设计CMS、Blog等常见Web应用的数据库；</li>
+									<li>熟悉SQL Server、MySQL、SQLite的使用；</li>
+									<li>能编写简单的存储过程和触发器。</li>
+								</ul>
+							</div>
+						</li>
+						<li class="tech-skill-list__item tech-skill-list__item-photoshop">
+							<h4 class="tech-skill-list__item__name">Photoshop</h4>
+							<div class="tech-skill-list__item__detail fade">
+								<ul class="list">
+									<li>能进行简单的图片处理和平面设计；</li>
+									<li>能制作动画GIF；</li>
+									<li>能根据图片特征存成最优的格式。</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

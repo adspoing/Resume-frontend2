@@ -1,0 +1,263 @@
+/* Reset CSS
+ * --------------------------------------- */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+    font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#f2f2f2;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #f2f2f2;
+}
+h1{
+    font-size: 4em;
+    text-shadow: #000000  0 2px 0;
+}
+h2{
+    font-size: 2em;
+    text-shadow: #000000  0 1px 0;
+}
+p{
+    font-size: 1em;
+}
+a:link {color:#49afcd}
+a:visited{color:red}
+a:hover{color:#BBFFEE}
+a:active {color:#0066ff}
+.section{
+    text-align: center;
+}
+
+#gmail
+{
+    margin:0px;
+}
+.mail *{
+    vertical-align:middle; /* 居中对齐， */
+    display:inline-block;
+}
+.phone *{
+    vertical-align:middle; /* 居中对齐， */
+    display:inline-block;
+    color:#49afcd;
+}
+#avatar{
+    width:256px;
+    height:256px;
+    border:10px solid #FFEE99;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -o-border-radius:50%;
+    border-radius:50%}
+/* 通用列表样式 */
+.list > li { list-style: disc; margin-left: 1.3em; }
+
+/* education */
+
+.edu { width: 50%; float: left; box-sizing: border-box; }
+.edu_pg { padding-right: 4%; }
+.edu_ms { padding-left: 4%; border-left: 2px dashed #ccc; }
+.edu_pg .edu__body { padding-left: 60px; color: #000000}
+.edu_ms .edu__body { padding-right: 60px; color: #000000}
+.edu__logo { height: 150px; }
+.edu_pg .edu__logo { float: right; margin-right: -40px; }
+.edu_ms .edu__logo { float: left; margin-left: -40px; }
+
+
+p, ul, ol {
+    text-align: justify;
+    text-justify: inter-ideograph;
+    line-height: 1.7;
+}
+
+
+/* professions */
+
+@media (max-width: 749px) {
+    #section4 { padding: 25px 0; }
+}
+
+@media (min-width: 750px) {
+    #section4 { padding: 35px 0; }
+}
+
+
+.tech-skill-list__item {
+    position: relative;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+.tech-skill-list__item-javascript {
+    -webkit-animation-name: bar-javascript;
+    animation-name: bar-javascript;
+}
+@-webkit-keyframes bar-javascript {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+@keyframes bar-javascript {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+.tech-skill-list__item-html-and-css {
+    width: 90%;
+    -webkit-animation-name: bar-html-and-css;
+    animation-name: bar-html-and-css;
+}
+@-webkit-keyframes bar-html-and-css {
+    0% { width: 0; }
+    100% { width: 90%; }
+}
+@keyframes bar-html-and-css {
+    0% { width: 0; }
+    100% { width: 90%; }
+}
+.tech-skill-list__item-nodejs {
+    width: 75%;
+    -webkit-animation-name: bar-nodejs;
+    animation-name: bar-nodejs;
+}
+@-webkit-keyframes bar-nodejs {
+    0% { width: 0; }
+    100% { width: 75%; }
+}
+@keyframes bar-nodejs {
+    0% { width: 0; }
+    100% { width: 75%; }
+}
+.tech-skill-list__item-aspdotnet {
+    width: 60%;
+    -webkit-animation-name: bar-aspdotnet;
+    animation-name: bar-aspdotnet;
+}
+@-webkit-keyframes bar-aspdotnet {
+    0% { width: 0; }
+    100% { width: 60%; }
+}
+@keyframes bar-aspdotnet {
+    0% { width: 0; }
+    100% { width: 60%; }
+}
+.tech-skill-list__item-sql {
+    width: 55%;
+    -webkit-animation-name: bar-sql;
+    animation-name: bar-sql;
+}
+@-webkit-keyframes bar-sql {
+    0% { width: 0; }
+    100% { width: 55%; }
+}
+@keyframes bar-sql {
+    0% { width: 0; }
+    100% { width: 55%; }
+}
+.tech-skill-list__item-photoshop {
+    width: 50%;
+    -webkit-animation-name: bar-photoshop;
+    animation-name: bar-photoshop;
+}
+@-webkit-keyframes bar-photoshop {
+    0% { width: 0; }
+    100% { width: 50%; }
+}
+@keyframes bar-photoshop {
+    0% { width: 0; }
+    100% { width: 50%; }
+}
+.tech-skill-list__item__name {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    overflow: hidden;
+    border-left: 3px solid;
+    color: #ff742a;
+    background-color: #fff6dd;
+    border-color: #fdbc40;
+}
+.tech-skill-list__item--practised .tech-skill-list__item__name {
+    color: #6e9c0f;
+    background-color: #eaf6d0;
+    border-color: #80bd01;
+}
+.tech-skill-list__item--mastered .tech-skill-list__item__name {
+    color: #2a7da9;
+    background-color: #d6efff;
+    border-color: #3498db;
+}
+.tech-skill-list__item__detail {
+    position: absolute;
+    left: 150px;
+    top: 12px;
+    z-index: 9999;
+    max-width: 350px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: none;
+}
+
+@media (max-width: 749px) {
+    .tech-skill-list__item { margin-bottom: 15px; }
+}
+
+@media (min-width: 750px) {
+    .tech-skill-list__item { margin-bottom: 20px; }
+    .tech-skill-list__item:hover .tech-skill-list__item__detail {
+        display: block;
+        font-size: 0.875em;
+    }
+    .fade { -webkit-animation: fadeIn 0.8s; animation: fadeIn 0.8s; }
+    @-webkit-keyframes fadeIn {
+        0% { display: none; opacity: 0; }
+        1% { display: block; opacity: 0; }
+        100% { display: block; opacity: 1; }
+    }
+    @keyframes fadeIn {
+        0% { display: none; opacity: 0; }
+        1% { display: block; opacity: 0; }
+        100% { display: block; opacity: 1; }
+    }
+}
+
