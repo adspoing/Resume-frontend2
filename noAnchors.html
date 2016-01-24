@@ -1,4 +1,3 @@
-@@ -0,0 +1,151 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -19,23 +18,22 @@
 	<script type="text/javascript" src="vendor/jquery.pagepiling.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			var en=['Page1','Page2','Page3','Page4'];
-			var cn=['页面1','页面2','页面3','页面4'];
+			var en=['Page1','Page2','Page3','Page4','Page5'];
+			var cn=['页面1','页面2','页面3','页面4','页面5'];
 			$('#pagepiling').pagepiling({
-				sectionsColor: ['#bfda00', '#00ffcc', '#9999ff', '#51bec4'],
+				sectionsColor: ['#bfda00', '#00ffcc', '#9999ff', '#51bec4','#FFC0CB'],
 				navigation: {
 					'position': 'right',
-					'tooltips': ['Home', 'Education', 'Page 3', 'Pgae 4']
+					'tooltips': ['Home', 'Education', 'Professions', 'Projects & Intern','Contact Me']
 				}
 			});
 		});
 	</script>
 </head>
-<body>
 <div id="pagepiling">
 	<div class="section center" id="home">
 		<img id="avatar" src="imgs/avatar.jpg"/>
-		<h1 id="title">Hu Chunwang</h1>
+		<h1 i d="title">Hu Chunwang</h1>
 		<h2>Web Front-End Developer</h2>
 		<div class="mail">
 			<img id="gmail" src="imgs/gmail.png"/>
@@ -74,8 +72,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section center" id="section4">
-		<div class="intro">
+	<div class="section center" id="pro">
 			<h1>Professions</h1>
 			<div class="boundary">
 				<div class="section-body">
@@ -84,10 +81,9 @@
 							<h4 class="tech-skill-list__item__name">Javascript</h4>
 							<div class="tech-skill-list__item__detail fade">
 								<ul class="list">
-									<li>精通原生Javascript，能脱离jQuery等类库编码；</li>
-									<li>能运用模块化、面向对象的方式编程；</li>
-									<li>熟悉正则表达式的使用；</li>
-									<li>编写过功能全面的Javascript基础类库。</li>
+									<li>Familiar with Javascript, can use jquery and bootstrap；</li>
+									<li>Perform Modular Programming and Object Oriented Programming；</li>
+									<li>Familiar with regular expression；</li>
 								</ul>
 							</div>
 						</li>
@@ -95,39 +91,37 @@
 							<h4 class="tech-skill-list__item__name">HTML &amp; CSS</h4>
 							<div class="tech-skill-list__item__detail fade">
 								<ul class="list">
-									<li>能使用合适的结构编写兼容主流浏览器的页面布局；</li>
-									<li>了解HTML 5新标签的语义；</li>
-									<li>能适当运用CSS 3使页面在现代浏览器上效果更佳；</li>
-									<li>能熟练使用Chrome开发者工具、FireBug、Fiddler等工具辅助开发；</li>
-									<li>有移动端页面（App内嵌页面）开发经验。</li>
+									<li>Can use the appropriate structure to write the compatible page layout of the mainstream browser ；</li>
+									<li>Understanding the semantics of HTML 5 new tags；</li>
+									<li>Can make appropriate use of CSS 3 pages in modern browsers；</li>
 								</ul>
 							</div>
 						</li>
 						<li class="tech-skill-list__item tech-skill-list__item-nodejs tech-skill-list__item--practised">
-							<h4 class="tech-skill-list__item__name">Node.js</h4>
+							<h4 class="tech-skill-list__item__name">Php</h4>
 							<div class="tech-skill-list__item__detail fade">
 								<ul class="list">
-									<li>能根据前端业务需求开发对应的辅助工具；</li>
-									<li>熟悉基于Express框架的Web开发。</li>
+										<li>Familiar with XAMPP environment</li>
+									    <li>Understanding the MVC pattern </li>
+										<li>Developed an course scheduling system</li>
 								</ul>
 							</div>
 						</li>
 						<li class="tech-skill-list__item tech-skill-list__item-aspdotnet tech-skill-list__item--practised">
-							<h4 class="tech-skill-list__item__name">ASP.NET &amp; ASP</h4>
+							<h4 class="tech-skill-list__item__name">Node.js</h4>
 							<div class="tech-skill-list__item__detail fade">
 								<ul class="list">
-									<li>熟悉基于WebForm和ASP.NET MVC的Web开发；</li>
-									<li>编写过一套简单的基于ADO.NET的ORM类库。</li>
+									<li>Learning node.js and Express.js ；</li>
+									<li>Developed a html5 canvas game with node.js and socket.io </li>
 								</ul>
 							</div>
 						</li>
 						<li class="tech-skill-list__item tech-skill-list__item-sql tech-skill-list__item--practised">
-							<h4 class="tech-skill-list__item__name">SQL</h4>
+							<h4 class="tech-skill-list__item__name">SQL &amp; noSQL</h4>
 							<div class="tech-skill-list__item__detail fade">
 								<ul class="list">
-									<li>能熟练设计CMS、Blog等常见Web应用的数据库；</li>
-									<li>熟悉SQL Server、MySQL、SQLite的使用；</li>
-									<li>能编写简单的存储过程和触发器。</li>
+									<li>Familiar with SQL Server, MySQL, SQLite ;</li>
+									<li>Familiar with MongoDB</li>
 								</ul>
 							</div>
 						</li>
@@ -135,17 +129,71 @@
 							<h4 class="tech-skill-list__item__name">Photoshop</h4>
 							<div class="tech-skill-list__item__detail fade">
 								<ul class="list">
-									<li>能进行简单的图片处理和平面设计；</li>
-									<li>能制作动画GIF；</li>
-									<li>能根据图片特征存成最优的格式。</li>
+									<li>Can perform simple image processing and graphic design；</li>
+									<li>Can make an animated GIF；</li>
 								</ul>
 							</div>
 						</li>
 					</ul>
 				</div>
 			</div>
+	</div>
+	<div class="section center" id="Project">
+     <h1>Project</h1>
+		<div class="pic">
+			<div class="gm">
+				<img id="game" src="imgs/game.png" class="game__img"/>
+				<div class="game__detail fade">
+					<ul id="gmm" class="list">
+						<h2>HTML5 GAME</h2>
+						<li >1. Designed an Html5 game , server-side code with Node.js</li>
+						<li>2. Established communication between server-side and client-side by Socket.IO</li>
+						<li>3. Used MongoDB to store game data and login information</li>
+					</ul>
+				</div>
+			</div>
+			<div class="analy">
+				<img id="analysis" src="imgs/analysis.png" class="analysis"/>
+				<div class="analysis__detail fade">
+					<ul  class="list">
+						<h2>Project of IEEE VAST 2014 Mini Challenge 1</h2>
+						<li >1. Used Mini Challenge 1 as source of data for analysis and designed a visualization system to explain results
+							by Processing</li>
+						<li>2. Utilized Wordle, bulb chart and matrix diagram to visualize data</li>
+						<li>3. Wrote Wordle codes and matrix diagram in this system.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="sys">
+				<img id="system" src="imgs/book.png" class="system"/>
+				<div class="system__detail fade">
+					<ul  class="list">
+						<h2>Course Scheduling System</h2>
+						<li >1. Utilized thinkphp framework to develop an intelligent course scheduling system</li>
+						<li>2. Responsible for manual scheduling module and front-end design by bootstrap framework and jQuery</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1>Intern</h1>
+		<div class="inte">
+				<img id="web" src="imgs/Web.png" class="web"/>
+			<img id="android" src="imgs/Android.png" class="android"/>
+		</div>
+		<div>
+			<h2>web&Android Developer</h2>
+			<h3>Hangzhou SUNKING Technology Co., Ltd. </h3>
+				<h3><strong>Aug.2015 - Jan.2016</strong></h3>
 		</div>
 	</div>
+	<div class="section center" id="Contact__Me">
+		<h1>Learn More</h1>
+		<h2><a href="http://www.springwon.cn">My Website</a></h2>
+		<h2><strong>Job prefered</strong></h2>
+		<h2>Web Front-End Developer</h2>
+		<h3>In Shanghai or Hangzhou</h3>
+		<h3><a href="mailto:hcwzju@gmail.com">Hire Me</a></h3>
+    </div>
 </div>
 
 </body>
