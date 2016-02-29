@@ -69,6 +69,30 @@ a:hover{color:#BBFFEE}
     text-align: center;
 }
 
+#language
+{
+    position:absolute;
+    right:20px;
+    top:20px;
+    border-radius:5px;
+    z-index:100;
+    font-size:0.8em
+}
+
+#language
+.lang
+{
+    display:inline-block;
+    border-radius:5px;
+    padding:2px 8px
+}
+#language
+.lang.selected{
+    background-color:#aee2d9;
+    color:#008a75;
+    cursor:default
+}
+
 #gmail
 {
     margin:0px;
@@ -90,22 +114,74 @@ a:hover{color:#BBFFEE}
     -moz-border-radius:50%;
     -o-border-radius:50%;
     border-radius:50%}
+
 /* 通用列表样式 */
 .list > li {
     list-style-position: inside;
     list-style: disc; margin-left: 1.3em; }
 
 /* education */
+@media screen and  (max-width: 980px) {
+    .edu { margin-top: 25px; padding-bottom: 55px; border-bottom: 2px dashed #ccc;         padding: 35px  }
+    .edu__logo {
+        /*width: 30%;*/
+        height:100px;
+        /*max-width: 150px;*/
+        /*min-width: 120px;*/
+        /*max-height: 100px*/
+        margin: 0 0 10px 20px;
+        float: right;
+    }
+    .edu_pg .edu__body {
+        color: #000000
+    }
 
-.edu { width: 50%; float: left; box-sizing: border-box; padding:25px }
-.edu_pg { padding-right: 4%; }
-.edu_ms { padding-left: 4%; border-left: 2px dashed #ccc; }
-.edu_pg .edu__body { padding-left: 20px; color: #000000}
-.edu_ms .edu__body { padding-right: 20px; color: #000000}
-.edu__logo { height: 150px; }
-.edu_pg .edu__logo { float: right; margin-right: -30px; }
-.edu_ms .edu__logo { float: left; margin-left: -30px; }
+    .edu_ms .edu__body {
+        color: #000000
+    }
+}
+@media screen and (min-width: 981px) {
 
+    .edu {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        padding: 25px
+    }
+
+    .edu_pg {
+        padding-right: 4%;
+    }
+
+    .edu_ms {
+        padding-left: 4%;
+        border-left: 2px dashed #ccc;
+    }
+
+    .edu_pg .edu__body {
+        padding-left: 20px;
+        color: #000000
+    }
+
+    .edu_ms .edu__body {
+        padding-right: 20px;
+        color: #000000
+    }
+
+    .edu__logo {
+        height: 150px;
+    }
+
+    .edu_pg .edu__logo {
+        float: right;
+        margin-right: -30px;
+    }
+
+    .edu_ms .edu__logo {
+        float: left;
+        margin-left: -30px;
+    }
+}
 
 p, ul, ol {
     text-align: justify;
@@ -157,29 +233,29 @@ p, ul, ol {
     0% { width: 0; }
     100% { width: 90%; }
 }
-.tech-skill-list__item-nodejs {
+.tech-skill-list__item-php {
     width: 75%;
+    -webkit-animation-name: bar-php;
+    animation-name: bar-php;
+}
+@-webkit-keyframes bar-php {
+    0% { width: 0; }
+    100% { width: 75%; }
+}
+@keyframes bar-php {
+    0% { width: 0; }
+    100% { width: 75%; }
+}
+.tech-skill-list__item-nodejs {
+    width: 60%;
     -webkit-animation-name: bar-nodejs;
     animation-name: bar-nodejs;
 }
 @-webkit-keyframes bar-nodejs {
     0% { width: 0; }
-    100% { width: 75%; }
-}
-@keyframes bar-nodejs {
-    0% { width: 0; }
-    100% { width: 75%; }
-}
-.tech-skill-list__item-aspdotnet {
-    width: 60%;
-    -webkit-animation-name: bar-aspdotnet;
-    animation-name: bar-aspdotnet;
-}
-@-webkit-keyframes bar-aspdotnet {
-    0% { width: 0; }
     100% { width: 60%; }
 }
-@keyframes bar-aspdotnet {
+@keyframes bar-nodejs {
     0% { width: 0; }
     100% { width: 60%; }
 }
@@ -209,6 +285,20 @@ p, ul, ol {
     0% { width: 0; }
     100% { width: 50%; }
 }
+.tech-skill-list__item-English {
+    width: 80%;
+    -webkit-animation-name: bar-English;
+    animation-name: bar-English;
+}
+@-webkit-keyframes bar-English {
+    0% { width: 0; }
+    100% { width: 80%; }
+}
+@keyframes bar-English {
+    0% { width: 0; }
+    100% { width: 80%; }
+}
+
 .tech-skill-list__item__name {
     height: 40px;
     line-height: 40px;
@@ -385,3 +475,69 @@ p, ul, ol {
     100% { display: block; opacity: 1; }
 }
 
+.mobile
+* {
+    text-shadow: none !important;
+   }
+
+.mobile #avatar {
+    width: 256px;
+    height: 256px;
+}
+
+.mobile
+{background-color: #aee2d9;}
+
+
+
+.mobile h2 {
+    text-align: center
+}
+
+.mobile h1 {
+    font-size: 4.625em;
+}
+
+.mobile h2 {
+    font-size: 3.5em;
+    margin-top: 0
+}
+
+.mobile h3 {
+    font-size: 2.125em;
+}
+
+.mobile h4 {
+    font-size: 0.9375em;
+}
+
+.mobile h5 {
+    font-size: 0.9em;
+}
+
+.mobile h6 {
+    font-size: 0.825em;
+}
+
+.mobile p {
+    font-size: 2.88em;
+    text-align: center
+}
+
+.mobile ul {
+    font-size: 2.88em
+}
+
+.mobile .edu { margin-top: 25px; padding-bottom: 55px; border-bottom: 2px dashed #ccc;         padding: 25px  }
+.mobile .edu__logo {
+    /*width: 30%;*/
+    height:120px;
+    /*max-width: 150px;*/
+    /*min-width: 120px;*/
+    /*max-height: 100px*/
+    margin: 0 0 10px 20px;
+    float: right;
+}
+.mobile #language{
+    font-size: 1.88em
+}
